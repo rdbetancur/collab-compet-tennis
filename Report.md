@@ -23,9 +23,7 @@ Tanh is used in the final layer that maps states to actions. Batch normalization
 
 ## Performance and Plot of Rewards
 
-![alt text](https://github.com/rubenbet/continuous_control_p2/blob/master/Results.png)
-
-https://github.com/rubenbet/continuous_control_p2/blob/master/Results.png
+![alt text](https://github.com/rubenbet/collab-compet-tennis/edit/master/ResultsCollab.png)
 
 The Environment was solved in 1593 episodes.
 
