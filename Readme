@@ -1,0 +1,91 @@
+# Udacity Collaboration and Competition
+
+In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play.
+The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. Each agent receives its own, local observation. Two continuous actions are available, corresponding to movement toward (or away from) the net, and jumping.
+
+The challenge of this project is that the agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents).
+
+The program was developed with the DDPG algorithm, based on the course code (https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum).
+
+## Getting started
+
+The project is written using Jupyter Notebook (tennis_solution.ipynb). 
+
+In order for it to work properly you must install Python 3.6, PyTorch ((https://pytorch.org/), the ML-Agents toolkit (Unity ML-Agents](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md), Numpy ((http://www.numpy.org/) and a few more Python packages required to complete the project.
+
+See the instrucions here to set up your environment ( https://github.com/udacity/deep-reinforcement-learning#dependencies):
+
+
+1.	Create (and activate) a new environment with Python 3.6.
+
+Linux or Mac:
+
+conda create --name drlnd python=3.6
+
+source activate drlnd
+
+Windows:
+
+conda create --name drlnd python=3.6 
+
+activate drlnd
+
+
+2.	Follow the instructions in this repository to perform a minimal install of OpenAI gym: https://github.com/openai/gym 
+
+Next, install the classic control environment group.
+
+Then, install the box2d environment group.
+
+
+3.	Clone the repository (if you haven't already!), and navigate to the python/ folder. Then, install several dependencies.
+
+git clone https://github.com/udacity/deep-reinforcement-learning.git
+
+cd deep-reinforcement-learning/python
+
+pip install .
+
+
+4.	Create an IPython kernel for the drlnd environment.
+
+python -m ipykernel install --user --name drlnd --display-name "drlnd"
+
+
+5.	Before running code in a notebook, change the kernel to match the drlnd environment by using the drop-down Kernel menu.
+
+Running all the cells in the notebook (Continuous_solution.ipynb) will install it automatically.
+
+The Reacher file is a Unity environment that will be activated when running the Jupyter file and will be able to show the agent performing the challenge of the game.
+
+## Detail of files and project
+
+These are the steps that execute the Jupyter file:
+
+1. Import the Necessary Packages
+2. Instantiate the Environment and agent
+3. Examine the State and Action Spaces
+4. Take random actions in the environment
+5. Set training parameters
+6. Train the agents
+7. Plot the scores
+8. Test agent
+9. Close the environment
+
+
+The project contains 8 files:
+
+tennis_solution.ipynb: Jupyter Notebook
+
+ddpg_agent.py: The Agent class
+
+model.py: The DDPG models
+
+checkpoint_actor1.pth, checkpoint_actor2.pth, checkpoint_critic1.pth, checkpoint_critic2.pth: Saved trained model to use
+
+Report.md: Results of the implementation
+
+Results: Image with the results of an agent training
+
+Tennis.app: The Game Unity Environment
+
