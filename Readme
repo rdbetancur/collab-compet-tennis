@@ -85,7 +85,7 @@ checkpoint_actor1.pth, checkpoint_actor2.pth, checkpoint_critic1.pth, checkpoint
 
 Report.md: Results of the implementation
 
-Results: Image with the results of an agent training
+ResultsCollab: Image with the results of an agent training
 
 Tennis.app: The Game Unity Environment
 
